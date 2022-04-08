@@ -17,6 +17,7 @@ public class Agent {
 
         new AgentBuilder.Default()
                 .with(new AgentBuilder.InitializationStrategy.SelfInjection.Eager())
+                .with(AgentBuilder.Listener.StreamWriting.toSystemOut())
                 .type((ElementMatchers.named("com.sun.jndi.ldap.LdapClient")))
                 .transform((builder, typeDescription, classLoader, module) -> builder
                         .method(ElementMatchers.named("getErrorMessage"))
