@@ -4,7 +4,7 @@
     <groupId>com.github.pearj</groupId>
     <artifactId>ldap-client-error-cleaner</artifactId>
     <packaging>jar</packaging>
-    <version>1.0</version>
+    <version>1.1</version>
     <name>LDAP client error cleaner</name>
     <url>https://github.com/pearj/ldap-client-error-cleaner</url>
     <distributionManagement>
